@@ -17,5 +17,9 @@ use App\Http\Controllers\AritmeticaController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/saludo', function () {
+    return view('saludo');
+});
+
 
 Route::get('/suma/{num1}/{num2}', [AritmeticaController::class, 'Sumar']);
